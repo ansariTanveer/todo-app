@@ -1,0 +1,67 @@
+#description{
+    height: 185px;
+    resize: none;
+}
+
+.remarkDiv{
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+}
+
+.done{
+    background-color: #92bf44 !important;
+    opacity: 0.9;
+}
+
+.inProgress{
+    background-color: #30c1c0 !important;
+    opacity: 0.9;
+}
+
+.toDo{
+    background-color: #f7e067 !important;
+    opacity: 0.9;
+}
+
+.textAlignLeft{
+    text-align: left;
+}
+
+.marginTop5{
+    margin-top: 5px;
+}
+
+.card{
+    height: 230px;
+}
+
+.tailTruncate{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-content{
+    height: 565px;
+}
+
+.cardHeader{
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: larger;
+}
+
+.editButton{
+    background-color: #80c340 !important;
+    border: 1px solid white !important;
+    font-size: 18px !important;
+}
+
+.textAlignLeft{
+    text-align: left !important;
+}
+
+.addButton{
+    width: inherit !important;
+    background-color: #5c2d4f !important;
+}
