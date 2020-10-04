@@ -25,11 +25,35 @@
 }
 
 .textAlignLeft{
-    text-align: left;
+    text-align: left !important;
+}
+
+.leftFloatItem{
+    float: left;
 }
 
 .marginTop5{
     margin-top: 5px;
+}
+
+.marginTop20{
+    margin-top: 20px;
+}
+
+.paddingClearfix{
+    padding: 0px !important;
+}
+
+.paddingTop20{
+    padding-top: 20px;
+}
+
+.paddingBottom20{
+    padding-bottom: 20px;
+}
+
+.paddingLeft15{
+    padding-left: 15px;
 }
 
 .card{
@@ -64,4 +88,21 @@
 .addButton{
     width: inherit !important;
     background-color: #5c2d4f !important;
+}
+
+.backDiv{
+    background-color: #edeef3;
+    height: 400px;
+    border: 1px solid black;
+    background-image: url("./images/bgImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frontDiv{
+    background-color: #ACAC;
+    position: absolute !important;
+    top: 200px;
+    border: 2px solid #ACACAC;
+    border-radius: 10px 0px 10px 0px;
 }

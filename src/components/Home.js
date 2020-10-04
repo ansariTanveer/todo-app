@@ -94,12 +94,15 @@ class Home extends React.Component{
     
     render(){
         return(
-            <Container style={{border:"2px solid green"}}>
-                <Legends onAddBtnClick={this.addBtnClick} />
-                <Row>
-                    {this.RenderTodoItems()}
-                </Row>
-                <AddEditComponent modal={this.state.modal} onModalToggle={this.OnModalToggle} task={this.selectedTask} />
+            <Container className="paddingClearfix">
+                <Col className="backDiv" lg="12" md="12" sm="12"></Col>
+                <Col className="frontDiv paddingBottom20 paddingTop20" lg= {{size: 8, offset: 1}} md={{size: 8, offset: 1}} sm={{size: 8, offset: 1}}>
+                    <Legends onAddBtnClick={this.addBtnClick} />
+                    <Row>
+                        {this.RenderTodoItems()}
+                    </Row>
+                    <AddEditComponent modal={this.state.modal} onModalToggle={this.OnModalToggle} task={this.selectedTask} />
+                </Col>
             </Container>
         );
     }

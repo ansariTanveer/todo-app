@@ -4,53 +4,38 @@ import {Row, Col, Label, Button} from "reactstrap";
 
 const Legends = ({onAddBtnClick}) => {
     return(
-
-        <Row>
-            <Col lg="4"></Col>
-            <Col lg="2">
-                <Row>
-                    <Col lg="2">
-                        <div className="remarkDiv toDo marginTop5">
-
-                        </div>
-                    </Col>
-                    <Col lg="10" className="textAlignLeft">
-                        <Label for="exampleEmail">To do</Label>
-                    </Col>
-                </Row>
-            </Col>
-            <Col lg="2">
-                <Row>
-                    <Col lg="2">
-                        <div className="remarkDiv inProgress marginTop5">
-
-                        </div>
-                    </Col>
-                    <Col lg="10" className="textAlignLeft">
-                        <Label for="exampleEmail">In progress</Label>
-                    </Col>
-                </Row>
-            </Col>
-            <Col lg="2">
-                <Row>
-                    <Col lg="2">
-                        <div className="remarkDiv done marginTop5">
-
-                        </div>
-                    </Col>
-                    <Col lg="10" className="textAlignLeft">
-                        <Label for="exampleEmail">Done</Label>
-                    </Col>
-                </Row>
-            </Col>
-            <Col lg="2">
-                <Button id="addBtn" className="addButton" color="primary" onClick={onAddBtnClick}>
-                    Add new Task
-                </Button>
-            </Col>
-        </Row>
-    )
-    
-}
+            <Row className="paddingLeft15">
+                <Col lg="3">
+                    <Row>
+                        <div lg="2" className="toDo remarkDiv marginTop5"></div>
+                        <Col lg="10">
+                            <Label className="leftFloatItem">To do</Label>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col lg="3">
+                    <Row>
+                        <div className="inProgress remarkDiv marginTop5"></div>
+                        <Col lg="10">
+                            <Label className="leftFloatItem">In progress</Label>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col lg="3">
+                    <Row>
+                        <div lg="2" className="done remarkDiv marginTop5"></div>
+                        <Col lg="10">
+                            <Label className="leftFloatItem">Done</Label>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col lg="3">
+                    <Button id="addBtn" className="addButton" color="primary" onClick={onAddBtnClick}>
+                        Add new Task
+                    </Button>
+                </Col>
+            </Row>
+        )    
+    }
 
 export default Legends;

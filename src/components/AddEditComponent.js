@@ -103,8 +103,8 @@ class AddEditComponent extends React.Component{
                     </Form>
                 </ModalBody>
                 <ModalFooter>
-                    <Button id="addBtn" color='primary' onClick={this.OnAddBtnClick}>Add</Button>{' '}
-                    <Button id="cancelBtn" color='secondary' onClick={this.OnCancelBtnClick}>Cancel</Button>
+                    <Button id="addBtn" color='primary col-lg-3' onClick={this.OnAddBtnClick}>Add</Button>{' '}
+                    <Button id="cancelBtn" color='secondary col-lg-3' onClick={this.OnCancelBtnClick}>Cancel</Button>
                 </ModalFooter>
             </Modal>
         );

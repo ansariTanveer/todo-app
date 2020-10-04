@@ -5,7 +5,6 @@ const TodoCard = ({data, onEditButtonClick}) => {
     
     const {Id, Title, Description, Status} = data;
 
-    console.log(Status, "=========");
     let statusColorClass;
     switch (Status) {
         case "Todo":
@@ -20,7 +19,7 @@ const TodoCard = ({data, onEditButtonClick}) => {
     }
 
     return(
-        <Col xs="2" sm="4" md="3" lg="3" id={Id}>
+        <Col xs="10" sm="6" md="4" lg="4" id={Id} className="marginTop20">
             <Card>
                 <CardHeader className={statusColorClass + " cardHeader"}>{Title}</CardHeader>
                 <CardBody className="textAlignLeft">
